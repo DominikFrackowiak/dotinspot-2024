@@ -2,26 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("/Brandon_Grotesque/Brandon_bld.otf") format("opentype"),
+       url("/Brandon_Grotesque/Brandon_reg.otf") format("opentype"),
+       url("/Brandon_Grotesque/Brandon_med.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+*{
+  font-family: "Brandon Grotesque";
 }
