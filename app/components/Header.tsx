@@ -4,7 +4,7 @@ import EmailLink from "./EmailLink"
 
 export default function Header() {
   return (
-		<header className="flex justify-between items-center max-w-[1200px] mx-auto ">
+		<header className="flex justify-between items-center max-w-[1040px] mx-auto ">
 			<Image
 				src='/LOGO.svg'
 				alt='logo'

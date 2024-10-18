@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { twMerge } from 'tw-merge'
+import { twMerge } from 'tailwind-merge'
 
 interface Envelope {
 	src: string
