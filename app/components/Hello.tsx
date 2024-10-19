@@ -16,7 +16,7 @@ export default function Hello() {
 					A freelance Motion Designer & Illustrator based in Madrid / Spain.
 				</span>
 				<span className='text-sm md:text-base xl:text-lg'>
-					I’m curious to know your project and how we could design it in the
+					I'm curious to know your project and how we could design it in the
 					most interesting way.
 				</span>
 			</h1>
