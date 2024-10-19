@@ -1,23 +1,21 @@
+import Hello from "./components/Hello";
+import LinksToPortfolio from "./components/LinksToPortfolio";
 import LinkToPortfolio from "./components/LinksToPortfolio";
+import SocialNav from "./components/SocialNav";
 import VideoAndAsidesSection from "./components/VideoAndAsidesSection";
 
 
 export default function Home() {
   return (
-		<main>
+		<main className="flex flex-col gap-[20px]">
 			<VideoAndAsidesSection />
-			<div className='flex justify-between max-w-[1040px] py-[20px] mx-auto'>
-				<LinkToPortfolio
-					txt='Illustration & Graphic'
-					icon='/portfolio-icons/icon-graphic.svg'
-					color='red'
-				/>
-				<LinkToPortfolio
-					txt='Motion Graphic'
-					icon='/portfolio-icons/icon-motion.svg'
-					color='turquoise'
-				/>
-			</div>
+			<LinksToPortfolio/>
+			<SocialNav
+				iconClasses='w-9 h-9'
+				ulClasses='flex md:hidden w-[355px] items-center justify-around'
+				navClasses='max-w-[355px] md:max-w-[728px] xl:max-w-[1040px] mx-auto'
+			/>
+			<Hello/>
 		</main>
 	)
 }

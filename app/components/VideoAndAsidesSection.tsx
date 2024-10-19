@@ -4,7 +4,7 @@ import AsideText from './AsideText'
 
 export default function VideoAndAsidesSection() {
   return (
-		<div className='flex justify-between w-[1200px]'>
+		<div className='flex justify-between w-[375px] md:w-[768px] xl:w-[1200px]'>
 			<AsideText
 				txt='If you want to see more of my work please check it below > > >'
 				direction='left'

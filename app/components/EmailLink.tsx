@@ -16,8 +16,8 @@ const envelopes: Envelope[] = [
 		alt: 'email icon off',
 		text: 'hello@dotinspot.com',
 		textColor: 'text-red',
-		hoverOpacity: 'group-hover:opacity-110',
-		initialOpacity: 'opacity-100',
+		hoverOpacity: 'group-hover:opacity-100',
+		initialOpacity: 'opacity-0',
 	},
 	{
 		src: '/envelope-on.svg',
@@ -31,27 +31,29 @@ const envelopes: Envelope[] = [
 
 export default function EmailLink() {
 	return (
-		<a
-			href='mailto:hello@dotinspot.com'
-			className='relative block h-6 group w-[180px]'
-		>
-			{envelopes.map((envelope, index) => (
-				<span
-					key={index}
-					className={twMerge(
-						`flex gap-3 absolute top-0 left-0 w-full transition-opacity duration-300 ${envelope.textColor} ${envelope.initialOpacity} ${envelope.hoverOpacity}`
-					)}
-				>
-					<Image
-						src={envelope.src}
-						height={300}
-						width={300}
-						alt={envelope.alt}
-						className='w-6 h-6'
-					/>
-					{envelope.text}
-				</span>
-			))}
-		</a>
+		<div>
+			<a
+				href='mailto:hello@dotinspot.com'
+				className='relative block h-6 group w-[180px]'
+			>
+				{envelopes.map((envelope, index) => (
+					<span
+						key={index}
+						className={twMerge(
+							`flex gap-3 absolute top-0 left-0 w-full transition-opacity duration-300 text-sm md:text-base ${envelope.textColor} ${envelope.initialOpacity} ${envelope.hoverOpacity}`
+						)}
+					>
+						<Image
+							src={envelope.src}
+							height={300}
+							width={300}
+							alt={envelope.alt}
+							className='w-6 h-6'
+						/>
+						{envelope.text}
+					</span>
+				))}
+			</a>
+		</div>
 	)
 }

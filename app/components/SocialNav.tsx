@@ -8,7 +8,8 @@ interface socialDataElement {
 }
 
 interface Props {
-	className?: string
+	navClasses?: string
+	ulClasses?: string
 	iconClasses?: string
 }
 
@@ -30,13 +31,22 @@ const socialNavData: socialDataElement[] = [
 	},
 ]
 
-export default function SocialNav({ className = '', iconClasses='' }: Props) {
+export default function SocialNav({
+	ulClasses = '',
+	iconClasses = '',
+	navClasses = '',
+}: Props) {
 	return (
-		<nav className={twMerge(className)}>
-			<ul className='flex gap-4'>
+		<nav className={navClasses}>
+			<ul className={twMerge('flex gap-4', ulClasses)}>
 				{socialNavData.map(social => (
 					<li key={social.url}>
-						<a href={social.url} className={twMerge('relative block w-6 h-6 group', iconClasses)}>
+						<a
+							href={social.url}
+							target='_blank'
+							rel='noopener noreferrer'
+							className={twMerge('relative block w-6 h-6 group', iconClasses)}
+						>
 							<Image
 								src={social.iconRed}
 								height={300}
