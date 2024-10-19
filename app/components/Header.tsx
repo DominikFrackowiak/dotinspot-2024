@@ -16,7 +16,7 @@ export default function Header() {
 				/>
 			</Link>
 			<div className='flex flex-col justify-end items-end gap-1 md:gap-10 md:flex-row'>
-				<span className='font-bold text-red text-sm md:text-base'>
+				<span className='font-normal text-red text-sm md:text-base'>
 					Hello! You are in the right spot :)
 				</span>
 				<SocialNav navClasses='hidden md:flex' />
