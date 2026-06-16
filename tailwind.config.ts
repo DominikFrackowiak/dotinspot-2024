@@ -24,7 +24,7 @@ const config: Config = {
 				'4xl': '32px',
 			},
 			fontFamily: {
-				brandon: ['"Brandon Grotesque"', 'sans-serif'],
+				josefin: ['"Josefin_Sans"', 'sans-serif'],
 			},
 			fontWeight: {
 				normal: '400',

@@ -3,14 +3,12 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Brandon Grotesque";
-  src: url("/Brandon_Grotesque/Brandon_bld.otf") format("opentype"),
-       url("/Brandon_Grotesque/Brandon_reg.otf") format("opentype"),
-       url("/Brandon_Grotesque/Brandon_med.otf") format("opentype");
-  font-weight: 400;
+  font-family: "Josefin_Sans";
+  src: url("/Josefin_Sans/JosefinSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 700;
   font-style: normal;
 }
 
 *{
-  font-family: "Brandon Grotesque";
+  font-family: "Josefin_Sans", sans-serif;
 }
